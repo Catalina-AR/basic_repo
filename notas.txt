@@ -1,1 +1,109 @@
 agregando notas
+
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo
+$ git remote add origin https://github.com/Catalina-AR/basic_repo.git
+fatal: not a git repository (or any of the parent directories): .git
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo
+$ git remote add origin https://github.com/Catalina-AR/basic_repo.git
+fatal: not a git repository (or any of the parent directories): .git
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo
+$ git init
+Initialized empty Git repository in C:/Users/Catalina/Desktop/basic_repo/.git/
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git remote add origin https://github.com/Catalina-AR/basic_repo.git
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Catalina-AR/basic_repo.git'
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git branch -M main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git branch -M
+fatal: branch name required
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git branch -M main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notas.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "primer archivo"
+[master (root-commit) fc44ab0] primer archivo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 notas.txt
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$     git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 108.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Catalina-AR/basic_repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "se escribe en notas"
+[master 84488dc] se escribe en notas
+ 1 file changed, 1 insertion(+)
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 266 bytes | 88.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Catalina-AR/basic_repo.git
+   fc44ab0..84488dc  master -> master
+
+Catalina@LAPTOP-1834Q44E MINGW64 ~/Desktop/basic_repo (master)
